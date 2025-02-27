@@ -15,7 +15,7 @@ ENV KAFKA_BUFFER_MEMORY=33554432
 ENV KAFKA_RETRIES=3
 ENV KAFKA_RETRY_BACKOFF_MS=1000
 ENV KAFKA_MAX_REQUEST_SIZE=1048576
-ENV ALLOWED_ORIGIN=localhost:3000
+ENV ALLOWED_ORIGIN=http://k8s-front-oliveyou-1e8b7ffabc-458159343.ap-northeast-2.elb.amazonaws.com
 
 RUN chmod +x gradlew
 RUN apt update && apt-get install findutils -y
